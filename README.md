@@ -1,19 +1,19 @@
-# Развертывание кластера Kubernetis на Proxmox 7 (Ubuntu v21).
+# Развертывание кластера Kubernetis на Proxmox 7
 
-### 1. Создание контейнера в Proxmox
+### 1. Создание контейнера на основе Ubuntu в Proxmox
 
     1.1. При создании контейнер должен быть не привелигированным
     1.2. Отключить подкачку (Swap=0)
     1.3. Kubernetes не поддерживает раздел ZFS
     1.4. Вставить в конфигурацию контейнера следующие настройки (nano /etc/pve/lxc/100.conf):
-    ```bash
-        lxc.apparmor.profile: unconfined
-        lxc.cap.drop:
-        lxc.cgroup2.devices.allow: a
-        lxc.mount.auto: proc:rw sys:rw
-        lxc.mount.entry: /dev/kmsg dev/kmsg none defaults,bind,create=file
-    ```
-####  Пример файла конфигурации:
+```bash
+    lxc.apparmor.profile: unconfined
+    lxc.cap.drop:
+    lxc.cgroup2.devices.allow: a
+    lxc.mount.auto: proc:rw sys:rw
+    lxc.mount.entry: /dev/kmsg dev/kmsg none defaults,bind,create=file
+```
+    Пример файла конфигурации:
 ```bash
         arch: amd64
         cores: 4
