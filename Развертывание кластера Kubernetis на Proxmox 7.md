@@ -1,4 +1,4 @@
-# Развертывание кластера Kubernetis на Proxmox 7
+# Развертывание кластера Kubernetis на Proxmox7
 
 ## 1. Создание контейнера на основе Ubuntu в Proxmox
 
