@@ -183,7 +183,7 @@ sudo apt install ncdu - установка утилиты
 
 <a href="https://losst.ru/poisk-bolshih-fajlov-linux"><b>Подробнее</b></a>
 
-## 30. Удаление ключа удаленного хоста в локальном ssh
+## 30. Удаление ключа удаленного хоста на локальном компьютере
 ``` sh
 /home/username/.ssh/known_hosts - Linux
 /Users/username/.ssh/known_hosts - MacOS
