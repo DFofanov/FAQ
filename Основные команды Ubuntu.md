@@ -159,3 +159,32 @@ passwd username
 * ```-u``` - отменяет действие параметра -l
 * ```-x``` - максимальное количество дней, пока пароль можно использовать.
 * ```-w``` - количество дней, после которых нужно предупреждать пользователя о том, что надо сменить пароль.
+## 28. Список запущенных сервисов
+``` sh
+systemctl
+...
+systemctl status servicename
+systemctl start servicename
+systemctl stop servicename
+systemctl restart servicename
+...
+systemctl reload servicename - перезагрузка конфигурационных файлов
+...
+systemctl enable servicename - включение севиса при загрузке
+systemctl disable servicename - выключение севиса при загрузке
+```
+## 29. Поиск больших файлов
+``` sh
+ncdu /home
+...
+sudo apt install ncdu - установка утилиты
+```
+![image](https://losst.ru/wp-content/uploads/2020/04/Snimok-ekrana-ot-2020-04-26-15-06-02.png)
+
+<a href="https://losst.ru/poisk-bolshih-fajlov-linux"><b>Подробнее</b></a>
+
+## 30. Удаление ключа удаленного хоста в локальном ssh
+``` sh
+/home/username/.ssh/known_hosts - Linux
+/Users/username/.ssh/known_hosts - MacOS
+```
