@@ -9,7 +9,7 @@
 
 ``` sh
 lxc.apparmor.profile: unconfined
-lxc.cap.drop:
+lxc.cap.drop: syslog
 lxc.cgroup2.devices.allow: a
 lxc.mount.auto: proc:rw sys:rw
 lxc.mount.entry: /dev/kmsg dev/kmsg none defaults,bind,create=file
